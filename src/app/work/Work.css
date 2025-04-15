@@ -1,0 +1,17 @@
+.work {
+  /* padding: 2em 5em; */
+}
+
+.work h1 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.work-content {
+  padding: 2em 2em;
+}
+.work p {
+  font-size: 16px;
+}
+.video-full {
+  margin-top: 2rem;
+}

@@ -1,0 +1,27 @@
+.about {
+  margin: 0 auto;
+  background-color: #212121;
+  color: #fff;
+}
+
+.about-content {
+  padding: 2em 5em;
+}
+.about-content h2 {
+  color: #c72537;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.about p {
+  font-size: 21px;
+  margin-top: 10px;
+}
+
+.about img {
+  margin-top: 20px;
+}
+
+.services {
+  margin-top: 20px;
+}

@@ -1,0 +1,52 @@
+.service-title {
+  font-size: 4em;
+}
+
+.projects,
+.team {
+  padding: 40px 40px;
+}
+
+.episode {
+  padding: 40px 40px;
+  border-bottom: 1px solid #fff;
+}
+
+.ep {
+  margin-right: 6em;
+}
+
+.contact {
+  text-align: center;
+  color: #fff;
+  padding: 40px 40px;
+  font-size: 14px;
+}
+
+.signature {
+  padding: 40px 40px;
+}
+.signature h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.signature h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.signature h4 {
+  color: #fff;
+}
+.signature p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+
+.spacey {
+  margin: 40px 0;
+}
+

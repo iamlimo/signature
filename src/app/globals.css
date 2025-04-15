@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flexxy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 30px 0 30px 0;
+  background: #c72537;
+}
+
+.founderSpeechField {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+}
+
+.founderSpeechContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+.founderSpeech > h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ededed;
+}
+.service-title {
+  font-size: 4em;
+}
+
+.projects,
+.team {
+  padding: 40px 40px;
+}
+
+.episode {
+  padding: 40px 40px;
+  border-bottom: 1px solid #fff;
+}
+
+.ep {
+  margin-right: 6em;
+}
+
+.contact {
+  text-align: center;
+  color: #fff;
+  padding: 40px 40px;
+  font-size: 14px;
+}
+
+.signature {
+  padding: 40px 40px;
+}
+.signature h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.signature h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.signature h4 {
+  color: #fff;
+}
+.signature p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  padding: 10px;
+}
+.spacey {
+  margin: 40px 0;
+}
+hr {
+  margin: 0 auto;
+  border: 1px solid #3a3a3a;
+}
