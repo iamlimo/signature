@@ -78,7 +78,7 @@ const Home = () => {
           presence.
         </p>
         <br />
-        <button className="hero-btn mb-1">Contact us</button>
+        <button className="hero-btn mb-1"><a href="mailto: info@signaturepictures.co">Contact Us</a></button>
         <div className="spacey"></div>
         <hr />
       </div>

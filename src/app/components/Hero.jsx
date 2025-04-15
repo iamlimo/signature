@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="hero-container">
       <video
         className="hero-video"
-        src="/videos/showreel.mp4"
+        src="/showreel.mp4"
         autoPlay
         loop
         muted
@@ -27,7 +27,9 @@ const Hero = () => {
         </h1>
         <p>Crafting visual experiences that captivate and convert.</p>
         <button className="hero-btn">
-          <a href="">Watch ILEKE the series</a>
+          <a href="https://www.youtube.com/watch?v=4mFxqJAqX9k&t=747s">
+            Watch ILEKE the series
+          </a>
         </button>
       </div>
     </section>
