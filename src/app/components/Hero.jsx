@@ -5,14 +5,7 @@ const Hero = () => {
   const glitch = useGlitch();
   return (
     <section className="hero-container">
-      <video
-        className="hero-video"
-        src="/spn.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-      />
+      <video className="hero-video" src="/spn.mp4" autoPlay loop playsInline />
 
       <div className="hero-overlay" />
 
