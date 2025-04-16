@@ -10,7 +10,9 @@ export default function Projects() {
         <div className=" px-6 py-4 ep">The Heir of Oyinde – Ilẹkẹ Ep.01</div>
         <div className=" px-6 py-4 ep">Director: Gafar Amoo</div>
         <div className=" px-6 py-4 ep">
-          <Link href="">Watch now</Link>
+          <Link href="https://www.youtube.com/watch?v=4mFxqJAqX9k&t=747s&pp=ygUFaWxla2U%3D">
+            Watch now
+          </Link>
         </div>
       </div>
       {/* end of episode 1 */}
