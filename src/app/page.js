@@ -6,7 +6,6 @@ import Ticker from "./components/Ticker";
 import Projects from "./components/Projects";
 import { useGlitch } from "react-powerglitch";
 
-
 import Footer from "./components/Footer";
 import Services from "./components/Services";
 
@@ -54,17 +53,17 @@ const Home = () => {
         <div className="flex items-center gap-6 p-4">
           <div className="px-6 py-4">
             <img src="/sanni.png" className="rounded-xl shadow" width={250} />
-            <h4 className="text-2xl font-bold">Sanni</h4>
+            <h4 className="text-2xl font-bold">Sanni Dhikrulah Olaniyi</h4>
             <p className="text-sm">Founder/ Creative Director</p>
           </div>
           <div className="px-6 py-4 rounded-xl shadow">
             <img src="/limo.png" className="rounded-xl shadow" width={250} />
-            <h4 className="text-2xl font-bold">Sanni</h4>
+            <h4 className="text-2xl font-bold">Limo</h4>
             <p className="text-sm">Co-founder/ CTO</p>
           </div>
           <div className="px-6 py-4 rounded-xl shadow">
             <img src="/future.png" className="rounded-xl shadow" width={250} />
-            <h4 className="text-2xl font-bold">Sanni</h4>
+            <h4 className="text-2xl font-bold">okeke victor chinemere</h4>
             <p className="text-sm">Creative Designer</p>
           </div>
         </div>
@@ -78,7 +77,9 @@ const Home = () => {
           presence.
         </p>
         <br />
-        <button className="hero-btn mb-1"><a href="mailto: info@signaturepictures.co">Contact Us</a></button>
+        <button className="hero-btn mb-1">
+          <a href="mailto: info@signaturepictures.co">Contact Us</a>
+        </button>
         <div className="spacey"></div>
         <hr />
       </div>
