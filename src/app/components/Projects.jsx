@@ -20,7 +20,7 @@ export default function Projects() {
         <div className=" px-6 py-4 mr-3 ep">
           <img className="rounded-md" src="/ep_2.jpg" alt="" width={200} />
         </div>
-        <div className=" px-6 py-4 ep">The Heir of Oyinde – Ilẹkẹ Ep.01</div>
+        <div className=" px-6 py-4 ep">The Heir of Oyinde – Ilẹkẹ Ep.02</div>
         <div className=" px-6 py-4 ep">Director: Gafar Amoo</div>
         <div className=" px-6 py-4 ep">
           <Link href="https://www.youtube.com/watch?v=csNc7NrDYiw&list=PLliSCxwabPSLpNhaHG7ia4AnvOh7Q3wOP&index=2&ab_channel=SignaturePicturesNetwork">
@@ -33,7 +33,7 @@ export default function Projects() {
         <div className=" px-6 py-4 mr-3 ep">
           <img className="rounded-md" src="/ep_3.jpg" alt="" width={200} />
         </div>
-        <div className=" px-6 py-4 ep">The Heir of Oyinde – Ilẹkẹ Ep.01</div>
+        <div className=" px-6 py-4 ep">The Heir of Oyinde – Ilẹkẹ Ep.03</div>
         <div className=" px-6 py-4 ep">Director: Gafar Amoo</div>
         <div className=" px-6 py-4 ep">
           <Link href="https://www.youtube.com/watch?v=ocvj_U9YWGM&list=PLliSCxwabPSLpNhaHG7ia4AnvOh7Q3wOP&index=3&ab_channel=SignaturePicturesNetwork">
@@ -46,7 +46,7 @@ export default function Projects() {
         <div className=" px-6 py-4 mr-3 ep">
           <img className="rounded-md" src="/ep_4.jpg" alt="" width={200} />
         </div>
-        <div className=" px-6 py-4 ep">The Heir of Oyinde – Ilẹkẹ Ep.01</div>
+        <div className=" px-6 py-4 ep">The Heir of Oyinde – Ilẹkẹ Ep.04</div>
         <div className=" px-6 py-4 ep">Director: Gafar Amoo</div>
         <div className=" px-6 py-4 ep">
           <Link href="https://www.youtube.com/watch?v=k75SpbHqVZA&list=PLliSCxwabPSLpNhaHG7ia4AnvOh7Q3wOP&index=4&ab_channel=SignaturePicturesNetwork">
