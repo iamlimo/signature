@@ -19,7 +19,7 @@ const page = () => {
         <hr></hr>
       </div>
       <div className="content what-we">
-        <h2>🔧 What We Do</h2>
+        <h2> What We Do</h2>
         <div className="flex flex-wrap gap-4 p-4">
           <div className="w-[300px] bg-blue-500 text-white p-6 rounded-lg shadow-md">
             <span className="text-lg font-semibold mb-2">
