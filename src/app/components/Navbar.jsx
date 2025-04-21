@@ -37,7 +37,7 @@ const Navbar = () => {
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex items-center space-x-6">
-          {navLinks.map((link) => (
+          {/* {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.path}
@@ -45,8 +45,13 @@ const Navbar = () => {
             >
               {link.name}
             </a>
-          ))}
-
+          ))} */}
+          <a href="/" className="hover:text-red-500 transition">
+            Home
+          </a>
+          <a href="/about-us" className="hover:text-red-500 transition">
+            About
+          </a>
           {/* Dropdown */}
           <div className="relative group">
             <button
@@ -70,7 +75,7 @@ const Navbar = () => {
               </div>
             )}
           </div>
-
+<a href="/contact" className="hover:text-red-500 transition"> Contact</a>
           <Link
             href="/contact"
             className="bg-red-600 hover:bg-red-700 transition text-white px-5 py-2 rounded-md"

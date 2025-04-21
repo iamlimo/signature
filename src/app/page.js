@@ -9,6 +9,13 @@ import { useGlitch } from "react-powerglitch";
 import Footer from "./components/Footer";
 import Services from "./components/Services";
 
+import dynamic from "next/dynamic";
+
+const VideoBackground = dynamic(() => import("./components/Hero"), {
+  ssr: false, // Avoid rendering on server
+  loading: () => <div className="bg-black w-full h-full absolute -z-10" />, // optional fallback
+});
+
 const Home = () => {
   const glitch = useGlitch();
   return (
