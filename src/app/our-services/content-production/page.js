@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div>
       <div className="titleBanner">
-        <h1>🎬 Content Production Services</h1>
+        <h1> Content Production Services</h1>
       </div>
       <div className="content">
         <h2> High-Quality, End-to-End Content Creation</h2>
@@ -85,7 +85,7 @@ const page = () => {
       </div>
       {/* end of what we do */}
       <div className="content">
-        <h2>🎥 Types of Content We Produce</h2>
+        <h2> Types of Content We Produce</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 p-4">
           <div className="bg-gray-100 rounded-xl shadow-md p-6 text-center">
             <span className="icon mb-2">
@@ -112,7 +112,7 @@ const page = () => {
       </div>
       {/* end of types of content we produce */}
       <div className="content">
-        <h2>💼 Who We Work With</h2>
+        <h2>Who We Work With</h2>
         We serve a wide range of industries, including: Corporate & B2B |
         E-commerce & Retail | Entertainment & Media | Education & Nonprofits |
         Healthcare & Pharmaceuticals
@@ -123,11 +123,11 @@ const page = () => {
             Column 1
           </div>
           <div className="bg-gray-100 rounded-xl shadow-md p-6 text-center">
-            <h2>💼 🌟 Why Choose Signature?</h2>
+            <h2> Why Choose Signature?</h2>
             We serve a wide range of industries, including: Corporate & B2B |
             E-commerce & Retail | Entertainment & Media | Education & Nonprofits
             | Healthcare & Pharmaceuticals Ready to create content that makes an
-            impact? 👉 [Let’s Talk – Start Your Project]
+            impact? [Let’s Talk – Start Your Project]
           </div>
         </div>
       </div>
