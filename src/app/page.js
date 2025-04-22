@@ -56,22 +56,30 @@ const Home = () => {
       {/* end of projects */}
       <div className="team signature bg-[#000000] text-white">
         <h2>Our Team</h2>
-        <h3 ref={glitch.ref}>Our team of creative and talented individuals</h3>
-        <div className="flex items-center gap-6 p-4">
-          <div className="px-6 py-4 team-grid ">
-            <img src="/sanni.png" className="rounded-xl shadow" width={250} />
-            <h4 className="text-2xl font-bold">Sanni Dhikrulah Olaniyi</h4>
-            <p className="text-sm">Founder/ Creative Director</p>
-          </div>
-          <div className="px-6 py-4 rounded-xl shadow team-grid">
-            <img src="/limo.png" className="rounded-xl shadow" width={250} />
-            <h4 className="text-2xl font-bold">Limo</h4>
-            <p className="text-sm">Co-founder/ CTO</p>
-          </div>
-          <div className="px-6 py-4 rounded-xl shadow team-grid">
-            <img src="/future.png" className="rounded-xl shadow" width={250} />
-            <h4 className="text-2xl font-bold">Okeke victor chinemere</h4>
-            <p className="text-sm">Creative Designer</p>
+        <h3>Our team of creative and talented individuals</h3>
+        <div className="container mx-auto px-4 py-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="">
+              <img src="/sanni.png" className="rounded-xl shadow" width={250} />
+              <h4 className="text-2xl font-bold">Sanni Dhikrulah Olaniyi</h4>
+              <p className="text-sm">Founder/ Creative Director</p>
+            </div>
+
+            <div className="">
+              <img src="/limo.png" className="rounded-xl shadow" width={250} />
+              <h4 className="text-2xl font-bold">Limo</h4>
+              <p className="text-sm">Co-founder/ CTO</p>
+            </div>
+
+            <div className="">
+              <img
+                src="/future.png"
+                className="rounded-xl shadow"
+                width={250}
+              />
+              <h4 className="text-2xl font-bold">Okeke Victor chinemere</h4>
+              <p className="text-sm">Creative Designer</p>
+            </div>
           </div>
         </div>
       </div>
