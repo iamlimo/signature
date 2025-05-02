@@ -39,7 +39,10 @@ const Home = () => {
             storytelling to create my own super stories.
           </p>
           <br />
-          <button className="hero-btn">Read Our Story</button>
+          <a href="/founder-speech">
+            {" "}
+            <button className="hero-btn">Read Our Story</button>
+          </a>
         </div>
       </div>
       <div className="services bg-[#1B1B1B] text-white signature">

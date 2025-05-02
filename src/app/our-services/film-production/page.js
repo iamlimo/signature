@@ -85,7 +85,18 @@ const page = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-gray-100 rounded-xl shadow-md p-6 text-center">
-          <h3 className="text-lg font-semibold text-gray-800 mb-2">Column 1</h3>
+          <h3 className="text-lg font-semibold text-gray-800 mb-2">
+            <iframe
+              width="500"
+              height="300"
+              src="https://www.youtube.com/embed/ykubqpR95Xs"
+              title="ÌLẸ̀KẸ̀ (The Hidden Heir) - Official Trailer"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </h3>
         </div>
         <div className="bg-gray-100 rounded-xl shadow-md p-6 text-left">
           <h2 className="text-xl font-bold text-gray-900 mb-4">
@@ -101,7 +112,10 @@ const page = () => {
             Ready to create content that makes an impact?
           </p>
           <button className="mt-4 bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-all">
-            Let’s Talk – Start Your Project
+            <a href="/contact-us" target="_blank">
+              {" "}
+              Let’s Talk – Start Your Project
+            </a>
           </button>
         </div>
       </div>

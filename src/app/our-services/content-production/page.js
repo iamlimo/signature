@@ -64,10 +64,7 @@ const page = () => {
         <h2 className="text-2xl font-semibold mb-6 text-center">What We Do</h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className={`text-white p-6 rounded-xl shadow-md ${service.color}`}
-            >
+            <div key={index} className={`p-6 rounded-xl shadow-md`}>
               <div className="flex flex-col items-start">
                 {service.icon}
                 <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
@@ -114,8 +111,8 @@ const page = () => {
         <div className="bg-gray-100 rounded-xl shadow-md p-6 text-center">
           <h3 className="text-xl font-medium mb-2">Start Your Project</h3>
           <p className="text-gray-700">
-            Let’s collaborate on your next big idea. Contact us today to get
-            started.
+            Let’s collaborate on your next big idea. <a href="/contact-us">Contact us</a>{" "}
+            today to get started.
           </p>
         </div>
       </section>
