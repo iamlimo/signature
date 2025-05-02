@@ -68,7 +68,7 @@ const Home = () => {
             <div className="">
               <img src="/limo.png" className="rounded-xl shadow" width={250} />
               <h4 className="text-2xl font-bold">Limo</h4>
-              <p className="text-sm">Co-founder/ CTO</p>
+              <p className="text-sm">Co-founder / CTO</p>
             </div>
 
             <div className="">

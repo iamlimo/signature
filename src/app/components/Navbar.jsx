@@ -12,14 +12,14 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about-us" },
     { name: "Work", path: "/work" },
-    { name: "Contact", path: "/contact" },
+    { name: "Contact", path: "/contact-us" },
   ];
 
   const serviceLinks = [
     { name: "Content Production", path: "/our-services/content-production" },
-    { name: "Creative Direction", path: "/services/creative-direction" },
-    { name: "Film Production", path: "/services/film-production" },
-    { name: "Music & Sound Production", path: "/services/music-sound" },
+    { name: "Creative Direction", path: "/our-services/creative-direction" },
+    { name: "Film Production", path: "/our-services/film-production" },
+    { name: "Music & Sound Production", path: "/our-services/music-production" },
   ];
 
   return (
