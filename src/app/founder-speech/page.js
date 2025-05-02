@@ -1,8 +1,10 @@
 import React from "react";
-
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 const page = () => {
   return (
     <>
+      <Navbar />
       <div className="max-w-4xl mx-auto px-4 py-12 text-gray-800">
         <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">
           Founder Speech
@@ -74,8 +76,10 @@ const page = () => {
             championing authentic African stories that reflect our identity and
             creativity.
           </p>
+          console.log("Rendering Founder Speech page");
         </section>
       </div>
+      <Footer />
     </>
   );
 };
