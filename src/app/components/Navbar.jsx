@@ -19,7 +19,10 @@ const Navbar = () => {
     { name: "Content Production", path: "/our-services/content-production" },
     { name: "Creative Direction", path: "/our-services/creative-direction" },
     { name: "Film Production", path: "/our-services/film-production" },
-    { name: "Music & Sound Production", path: "/our-services/music-production" },
+    {
+      name: "Music & Sound Production",
+      path: "/our-services/music-production",
+    },
   ];
 
   return (
@@ -75,9 +78,12 @@ const Navbar = () => {
               </div>
             )}
           </div>
-<a href="/contact" className="hover:text-red-500 transition"> Contact</a>
+          <a href="/contact-us" className="hover:text-red-500 transition">
+            {" "}
+            Contact
+          </a>
           <Link
-            href="/contact"
+            href="/contact-us"
             className="bg-red-600 hover:bg-red-700 transition text-white px-5 py-2 rounded-md"
           >
             Let’s Talk
@@ -132,7 +138,7 @@ const Navbar = () => {
 
           <div className="flex justify-center">
             <Link
-              href="/contact"
+              href="/contact-us"
               className="bg-red-600 hover:bg-red-700 transition text-white px-5 py-2 rounded-md"
             >
               Let’s Talk
