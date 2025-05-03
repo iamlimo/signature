@@ -102,14 +102,14 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden mt-4 space-y-4">
           {navLinks.map((link) => (
-            <Link
+            <a
               key={link.name}
               href={link.path}
               onClick={() => setIsOpen(false)}
               className="block text-center py-2"
             >
               {link.name}
-            </Link>
+            </a>
           ))}
 
           {/* Services Dropdown */}
@@ -123,14 +123,14 @@ const Navbar = () => {
             {servicesOpen && (
               <div className="mt-2 bg-white text-black rounded-md shadow-md py-2 mx-8">
                 {serviceLinks.map((item) => (
-                  <Link
+                  <a
                     key={item.name}
                     href={item.path}
                     onClick={() => setIsOpen(false)}
                     className="block px-4 py-2 hover:bg-red-100"
                   >
                     {item.name}
-                  </Link>
+                  </a>
                 ))}
               </div>
             )}
