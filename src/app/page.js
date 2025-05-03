@@ -8,6 +8,7 @@ import { useGlitch } from "react-powerglitch";
 
 import Footer from "./components/Footer";
 import Services from "./components/Services";
+import Partners from "./components/Partners";
 
 import dynamic from "next/dynamic";
 
@@ -70,6 +71,10 @@ const Home = () => {
         <Projects />
       </div>
       {/* end of projects */}
+
+      <div className="partners bg-[#1B1B1B] text-white signature">
+        <Partners />
+      </div>
       <div className="team signature bg-[#000000] text-white">
         <h2>Our Team</h2>
         <h3>Our team of creative and talented individuals</h3>
