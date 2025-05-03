@@ -51,9 +51,22 @@ const Home = () => {
       {/* end of services */}
       <div className="projects bg-[#C72537] text-white signature">
         <h2>Our Projects</h2>
-        <h2 ref={glitch.ref}>
-          20k+ views on <a href="">Youtube</a> already
-        </h2>
+        <div className="flex flex-wrap gap-4">
+          <div className="inline-block  text-white p-4">
+            <h2 ref={glitch.ref}>
+              20k+ views on <a href="">Youtube</a> already
+            </h2>
+          </div>
+          <div className="inline-block text-white p-4">
+            {" "}
+            <button className="btn">
+              <a href="https://www.youtube.com/watch?v=4mFxqJAqX9k&t=747s">
+                Watch Now{" "}
+              </a>
+            </button>
+          </div>
+        </div>
+
         <Projects />
       </div>
       {/* end of projects */}
