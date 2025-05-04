@@ -26,7 +26,7 @@ const Contact = () => {
             </div>
             <div className=" rounded-2xl shadow p-6">
               <h2 className="text-xl font-semibold mb-2">Phone</h2>
-              <p>+234 707 393 6362</p>
+              <p>+234 902 630 8433</p>
             </div>
             <div className="rounded-2xl shadow p-6">
               <h2 className="text-xl font-semibold mb-2"> Email Address</h2>
