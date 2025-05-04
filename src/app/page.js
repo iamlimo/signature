@@ -98,7 +98,7 @@ const Home = () => {
                 className="rounded-xl shadow"
                 width={250}
               />
-              <h4 className="text-2xl font-bold">Okeke Victor chinemere</h4>
+              <h4 className="text-2xl font-bold">Okeke Victor Chinemere</h4>
               <p className="text-sm">Creative Designer</p>
             </div>
           </div>

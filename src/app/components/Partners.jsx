@@ -1,6 +1,10 @@
 import React from "react";
 
-const logos = ["./empire.png", "./urbanspacer.png"];
+const logos = [
+  "./empire.png",
+  "./urbanspacer.png",
+  "signature_pictures_jrandle.png",
+];
 
 const Partners = () => {
   return (
