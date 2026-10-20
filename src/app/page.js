@@ -40,10 +40,14 @@ const Home = () => {
             storytelling to create my own super stories.
           </p>
           <br />
-          <a href="/founder-speech">
-            {" "}
-            <button className="hero-btn">Read Our Story</button>
-          </a>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="/founder-speech">
+              <button className="hero-btn">Read Our Story</button>
+            </a>
+            <a href="/founder/resume">
+              <button className="hero-btn">View Resume</button>
+            </a>
+          </div>
         </div>
       </div>
       <div className="services bg-[#1B1B1B] text-white signature">
