@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
@@ -30,12 +31,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src="/spn-logo.png" alt="Logo" className="h-14 w-auto" />
-          {/* <div className="text-sm uppercase font-semibold leading-tight">
-            Signature Pictures
-            <br />
-            <span className="text-xs font-light tracking-widest">Network</span>
-          </div> */}
+          <Image
+            src="/spn-logo.png"
+            alt="Logo"
+            width={120}
+            height={56}
+            className="h-14 w-auto"
+          />
         </div>
 
         {/* Desktop Nav Links */}

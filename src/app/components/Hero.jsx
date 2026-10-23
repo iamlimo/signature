@@ -1,11 +1,23 @@
 import React from "react";
+import Image from "next/image";
 import "./Hero.css";
 import { useGlitch } from "react-powerglitch";
+
 const Hero = () => {
   const glitch = useGlitch();
+
   return (
     <section className="hero-container">
-      <video className="hero-video" src="/spn.mp4" autoPlay muted loop playsInline />
+      <div className="hero-poster">
+        <Image
+          src="/Key Art Selected Abstract.png"
+          alt="Signature Pictures Network cinematic banner"
+          fill
+          priority
+          sizes="100vw"
+          style={{ objectFit: "cover" }}
+        />
+      </div>
 
       <div className="hero-overlay" />
 

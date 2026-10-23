@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Services from "../components/Services";
 import Navbar from "../components/Navbar";
 import "./About.css";
@@ -25,7 +26,14 @@ const About = () => {
           </p>
         </div>
         <div className="img-full">
-          <img src="/about-spn.png" alt="" className="" />
+          <Image
+            src="/about-spn.png"
+            alt="Signature Pictures Network team and work"
+            width={1600}
+            height={900}
+            priority
+            style={{ width: "100%", height: "auto" }}
+          />
         </div>
         <div className="services">
           <h2 className="text-2xl font-bold text-center mb-4">Our Services</h2>

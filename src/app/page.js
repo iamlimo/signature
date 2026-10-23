@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Ticker from "./components/Ticker";
@@ -9,13 +10,6 @@ import { useGlitch } from "react-powerglitch";
 import Footer from "./components/Footer";
 import Services from "./components/Services";
 import Partners from "./components/Partners";
-
-import dynamic from "next/dynamic";
-
-const VideoBackground = dynamic(() => import("./components/Hero"), {
-  ssr: false, // Avoid rendering on server
-  loading: () => <div className="bg-black w-full h-full absolute -z-10" />, // optional fallback
-});
 
 const Home = () => {
   const glitch = useGlitch();
@@ -85,22 +79,36 @@ const Home = () => {
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="">
-              <img src="/sanni.png" className="rounded-xl shadow" width={250} />
+              <Image
+                src="/sanni.png"
+                alt="Sanni Dhikrulah Olaniyi"
+                className="rounded-xl shadow"
+                width={250}
+                height={250}
+              />
               <h4 className="text-2xl font-bold">Sanni Dhikrulah Olaniyi</h4>
               <p className="text-sm">Founder/ Creative Director</p>
             </div>
 
             <div className="">
-              <img src="/limo.png" className="rounded-xl shadow" width={250} />
+              <Image
+                src="/limo.png"
+                alt="Isaac Orija"
+                className="rounded-xl shadow"
+                width={250}
+                height={250}
+              />
               <h4 className="text-2xl font-bold">Isaac Orija</h4>
               <p className="text-sm">Co-founder / CTO</p>
             </div>
 
             <div className="">
-              <img
+              <Image
                 src="/future.png"
+                alt="Okeke Victor Chinemere"
                 className="rounded-xl shadow"
                 width={250}
+                height={250}
               />
               <h4 className="text-2xl font-bold">Okeke Victor Chinemere</h4>
               <p className="text-sm">Creative Designer</p>
