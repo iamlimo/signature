@@ -32,7 +32,7 @@ const Hero = () => {
         </h1>
         <p>Crafting visual experiences that captivate and convert.</p>
         <button className="hero-btn">
-          <a href="https://www.youtube.com/watch?v=4mFxqJAqX9k&t=747s">
+          <a href="https://signaturetv.co/tvshow/l-k-the-heir-of-oyinde">
             Watch ILEKE the series
           </a>
         </button>
