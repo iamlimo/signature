@@ -125,8 +125,8 @@ export default function FounderResumePage() {
                 <div className="mt-5 space-y-2 text-sm text-[#e7e7e7]">
                   <p>Location: Lagos, Nigeria</p>
                   <p>Phone: +2348162059633</p>
-                  <p>Email: ceo@signaturetv.co</p>
-                  <p>Website: <a href="https://signaturepicture.co/"></a></p>
+                  <p> Email: ceo@signaturetv.co</p>
+                  <p>Website: <a href="https://signaturepicture.co/">https://signaturepicture.co</a></p>
                   <p>
                    LinkedIn  <a href="https://www.linkedin.com/in/sanni-dhikrulah-olaniyi-0a1b3b1b6/" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#c72537]">
                     https://www.linkedin.com/in/sanni-dhikrulah-olaniyi-0a1b3b1b6/
