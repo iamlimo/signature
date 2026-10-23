@@ -38,6 +38,7 @@ const filmography = [
     director: "Gafar Amoo",
     writer: "Ahmed Oyediran",
     status: "Completed",
+    cover: "/Key%20Art%20Selected%20Abstract.png",
     synopsis:
       "Desperate for an heir, King Adeoye is unaware his true son, Beyioku, is raised secretly by the Iya Agba.",
     contribution:
@@ -56,6 +57,7 @@ const filmography = [
     director: "Olaide Abidoye",
     writer: "Ahmed Oyediran",
     status: "Completed",
+    cover: "/Éléré_ The Spirit Child.png",
     synopsis:
       "Thrust into the spirit realm during prayer, an aging Islamic cleric discovers the Elére, souls bound by ancient covenants who are not all evil, but victims and vessels.",
     contribution:
@@ -126,13 +128,11 @@ export default function FounderResumePage() {
                   <p>Email: ceo@signaturetv.co</p>
                   <p>Website: https://signaturepicture.co/</p>
                   <p>
-                    LinkedIn:
-                    www.linkedin.com/in/sanni-dhikrulah-olaniyi-79a56a32a
+                   <a href="https://www.linkedin.com/in/sanni-dhikrulah-olaniyi-0a1b3b1b6/" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#c72537]">
+                      LinkedIn Profile
+                    </a>
                   </p>
-                  <p>
-                    IMDb Profile:
-                    www.imdb.com/user/p.dezcm4sk466m64ida6n3j3jyty?ref_=up_nv_profile
-                  </p>
+                  
                 </div>
 
                 <div className="mt-8 flex flex-wrap gap-4">
@@ -152,19 +152,25 @@ export default function FounderResumePage() {
               </div>
 
               <div className="flex items-center justify-center">
-                <div className="w-full max-w-sm rounded-[24px] border border-white/10 bg-gradient-to-br from-[#c72537] via-[#9d162b] to-[#2a0a12] p-6 shadow-2xl">
-                  <div className="mb-4 h-20 w-20 rounded-full border-4 border-white/20 bg-white/10" />
-                  <p className="text-[10px] uppercase tracking-[0.22em] text-[#f7d7dc]">
-                    Professional profile
-                  </p>
-                  <h2 className="mt-3 text-2xl font-bold text-white">
-                    Film Producer
-                  </h2>
-                  <p className="mt-3 text-sm leading-6 text-[#f3dfe2]">
-                    Developing, producing, managing and delivering film projects
-                    with a focus on authentic African storytelling and
-                    commercially viable content.
-                  </p>
+                <div className="w-full max-w-sm overflow-hidden rounded-[24px] border border-white/10 bg-gradient-to-br from-[#c72537] via-[#9d162b] to-[#2a0a12] shadow-2xl">
+                  <img
+                    src="/sanni.png"
+                    alt="Sanni Dhikrulah Olaniyi"
+                    className="h-[340px] w-full object-cover object-center grayscale"
+                  />
+                  <div className="p-6">
+                    <p className="text-[10px] uppercase tracking-[0.22em] text-[#f7d7dc]">
+                      Professional profile
+                    </p>
+                    <h2 className="mt-3 text-2xl font-bold text-white">
+                      Film Producer
+                    </h2>
+                    <p className="mt-3 text-sm leading-6 text-[#f3dfe2]">
+                      Developing, producing, managing and delivering film projects
+                      with a focus on authentic African storytelling and
+                      commercially viable content.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -253,6 +259,16 @@ export default function FounderResumePage() {
                 key={film.title}
                 className="rounded-[28px] bg-white p-7 shadow-sm ring-1 ring-[#efe4e0]"
               >
+                {film.cover && (
+                  <div className="mb-6 overflow-hidden rounded-[20px] border border-[#efe4e0] bg-[#f9f1f1]">
+                    <img
+                      src={film.cover}
+                      alt={`${film.title} key art`}
+                      className="h-[260px] w-full object-cover object-center md:h-[360px]"
+                    />
+                  </div>
+                )}
+
                 <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
                   <div>
                     <h3 className="text-2xl font-black text-[#111111]">
@@ -455,7 +471,7 @@ export default function FounderResumePage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 pb-20 sm:px-6 lg:px-8">
+        {/* <section className="mx-auto max-w-6xl px-4 pb-20 sm:px-6 lg:px-8">
           <div className="rounded-[28px] bg-white p-8 shadow-sm ring-1 ring-[#efe4e0]">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c72537]">
               Declaration
@@ -490,7 +506,7 @@ export default function FounderResumePage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       <Footer />
