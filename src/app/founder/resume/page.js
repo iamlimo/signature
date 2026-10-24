@@ -112,7 +112,7 @@ export default function FounderResumePage() {
             <div className="grid gap-8 px-6 py-8 md:grid-cols-[1.4fr_0.6fr] md:px-10 lg:px-14 lg:py-12">
               <div>
                 <p className="mb-3 inline-flex rounded-full border border-white/20 bg-white/5 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#f4d4d8]">
-                  Film Producer – Professional CV
+                   Professional CV
                 </p>
                 <h1 className="text-4xl font-black tracking-tight text-white md:text-5xl">
                   Sanni Dhikrulah Olaniyi
@@ -249,7 +249,7 @@ export default function FounderResumePage() {
         <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
           <div className="mb-8">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c72537]">
-              3. Filmography – Selected Productions
+              3. Filmography
             </p>
           </div>
 
@@ -447,7 +447,7 @@ export default function FounderResumePage() {
               </ul>
             </div>
 
-            <div className="rounded-[28px] bg-[#f9e9eb] p-7 shadow-sm">
+            {/* <div className="rounded-[28px] bg-[#f9e9eb] p-7 shadow-sm">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c72537]">
                 Recommended Attachments
               </p>
@@ -467,7 +467,7 @@ export default function FounderResumePage() {
                   representative.
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </section>
 
