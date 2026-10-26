@@ -1,9 +1,10 @@
 import React from "react";
+import Image from "next/image";
 
 const logos = [
-  "./empire.png",
-  "./urbanspacer.png",
-  "signature_pictures_jrandle.png",
+  { src: "/empire.png", alt: "Empire partner" },
+  { src: "/urbanspacer.png", alt: "Urban Spacer partner" },
+  { src: "/signature_pictures_jrandle.png", alt: "Signature Pictures Jrandle partner" },
 ];
 
 const Partners = () => {
@@ -16,10 +17,13 @@ const Partners = () => {
             key={index}
             className="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 flex items-center justify-center"
           >
-            <img
-              src={logo}
-              alt={`Partner ${index + 1}`}
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              width={180}
+              height={120}
               className="h-64 object-contain"
+              loading="lazy"
             />
           </div>
         ))}

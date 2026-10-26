@@ -17,14 +17,14 @@ const page = () => {
             and the founder of Signature Pictures Network. Inspired by classic
             soap operas like Super Story and productions by Wale Adenuga (WAP),
             I’ve been driven to create compelling African stories—like the
-            masterpiece <strong>Ileke</strong>.
+            masterpiece <strong>ÌLẸ̀KẸ̀ - The Hidden Heir.</strong>.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-xl font-semibold mb-2">About Ileke</h2>
           <p>
-            <strong>Ileke</strong> is my open letter to Nollywood and the global
+            <strong>ÌLẸ̀KẸ̀ - The Hidden Heir.</strong> is my open letter to Nollywood and the global
             film industry—a powerful, original story deeply rooted in Yoruba
             spirituality, fashion, and culture.
           </p>
@@ -72,11 +72,11 @@ const page = () => {
           <h2 className="text-xl font-semibold mb-2">Closing Words</h2>
           <p>
             I’m proud of this journey and grateful to everyone who contributed
-            to bringing <strong>Ileke</strong> to life. I’ll continue
+            to bringing <strong>ÌLẸ̀KẸ̀ - The Hidden Heir.</strong> to life. I’ll continue
             championing authentic African stories that reflect our identity and
             creativity.
           </p>
-          console.log("Rendering Founder Speech page");
+        
         </section>
       </div>
       <Footer />

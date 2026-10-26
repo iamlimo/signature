@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
@@ -101,6 +102,18 @@ const rightsChecklist = [
 
 const languageList = ["Yoruba - Native / Fluent", "English - Fluent"];
 
+const recommendedAttachments = [
+  "Producer&apos;s CV and selected filmography.",
+  "Individual film synopsis and technical specifications.",
+  "Official poster or key art and approved still images.",
+  "Trailer or screener link, with appropriate access permissions.",
+  "Cast and crew list.",
+  "Production and copyright ownership information.",
+  "Rights and distribution availability statement.",
+  "Available technical delivery information.",
+  "Contact details for the authorised rights holder or sales representative.",
+];
+
 export default function FounderResumePage() {
   return (
     <>
@@ -108,31 +121,31 @@ export default function FounderResumePage() {
 
       <main className="bg-[#f6f3f1] text-[#121212]">
         <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
-          <div className="rounded-[28px] bg-[#111111] text-white shadow-[0_30px_80px_rgba(0,0,0,0.22)]">
-            <div className="grid gap-8 px-6 py-8 md:grid-cols-[1.4fr_0.6fr] md:px-10 lg:px-14 lg:py-12">
-              <div>
-                <p className="mb-3 inline-flex rounded-full border border-white/20 bg-white/5 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#f4d4d8]">
-                   Professional CV
+          <div className="overflow-hidden rounded-[30px] bg-[#111111] text-white shadow-[0_30px_80px_rgba(0,0,0,0.22)] ring-1 ring-white/10">
+            <div className="grid gap-8 px-6 py-8 md:grid-cols-[1.45fr_0.55fr] md:px-10 lg:px-14 lg:py-12">
+              <div className="relative">
+                <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,_rgba(199,37,55,0.28),_transparent_40%)]" />
+                <p className="mb-4 inline-flex rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#f4d4d8]">
+                  Professional CV
                 </p>
                 <h1 className="text-4xl font-black tracking-tight text-white md:text-5xl">
                   Sanni Dhikrulah Olaniyi
                 </h1>
 
-                <p className="mt-4 text-lg text-[#f1f1f1] md:text-xl">
-                  Film Producer | Executive Producer | Film Tech
+                <p className="mt-4 text-lg font-medium text-[#f1f1f1] md:text-xl">
+                  Film Producer | Executive Producer | Content Strategist
                 </p>
 
-                <div className="mt-5 space-y-2 text-sm text-[#e7e7e7]">
+                <div className="mt-7 grid gap-2 text-sm text-[#e7e7e7] sm:grid-cols-2">
                   <p>Location: Lagos, Nigeria</p>
                   <p>Phone: +2348162059633</p>
-                  <p> Email: ceo@signaturetv.co</p>
-                  <p>Website: <a href="https://signaturepicture.co/">https://signaturepicture.co</a></p>
+                  <p>Email: ceo@signaturetv.co</p>
                   <p>
-                   LinkedIn  <a href="https://www.linkedin.com/in/sanni-dhikrulah-olaniyi-0a1b3b1b6/" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#c72537]">
-                    https://www.linkedin.com/in/sanni-dhikrulah-olaniyi-0a1b3b1b6/
-                    </a>
+                    Website: <a href="https://signaturepicture.co/" className="text-[#f9c4ca] underline-offset-4 hover:underline">https://signaturepicture.co</a>
                   </p>
-                  
+                  <p className="sm:col-span-2">
+                    LinkedIn: <a href="https://www.linkedin.com/in/sanni-dhikrulah-olaniyi-0a1b3b1b6/" target="_blank" rel="noopener noreferrer" className="text-[#f9c4ca] underline-offset-4 hover:underline">https://www.linkedin.com/in/sanni-dhikrulah-olaniyi-0a1b3b1b6/</a>
+                  </p>
                 </div>
 
                 <div className="mt-8 flex flex-wrap gap-4">
@@ -144,7 +157,7 @@ export default function FounderResumePage() {
                   </a>
                   <a
                     href="/founder-speech"
-                    className="rounded-full border border-white/20 bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/5"
+                    className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
                   >
                     Founder Story
                   </a>
@@ -153,11 +166,17 @@ export default function FounderResumePage() {
 
               <div className="flex items-center justify-center">
                 <div className="w-full max-w-sm overflow-hidden rounded-[24px] border border-white/10 bg-gradient-to-br from-[#c72537] via-[#9d162b] to-[#2a0a12] shadow-2xl">
-                  <img
-                    src="/sanni.png"
-                    alt="Sanni Dhikrulah Olaniyi"
-                    className="h-[340px] w-full object-cover object-center grayscale"
-                  />
+                  <div className="relative">
+                    <Image
+                      src="/sanni.png"
+                      alt="Sanni Dhikrulah Olaniyi"
+                      width={800}
+                      height={1100}
+                      className="h-[340px] w-full object-cover object-center grayscale"
+                      priority
+                    />
+                    <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#1b0d11] to-transparent" />
+                  </div>
                   <div className="p-6">
                     <p className="text-[10px] uppercase tracking-[0.22em] text-[#f7d7dc]">
                       Professional profile
@@ -182,7 +201,7 @@ export default function FounderResumePage() {
             {profileStats.map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-2xl border border-[#e7ddd9] bg-white p-5 shadow-sm"
+                className="rounded-2xl border border-[#e7ddd9] bg-white p-5 shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-md"
               >
                 <p className="text-3xl font-black text-[#c72537]">
                   {stat.value}
@@ -261,10 +280,13 @@ export default function FounderResumePage() {
               >
                 {film.cover && (
                   <div className="mb-6 overflow-hidden rounded-[20px] border border-[#efe4e0] bg-[#f9f1f1]">
-                    <img
+                    <Image
                       src={film.cover}
                       alt={`${film.title} key art`}
+                      width={1200}
+                      height={720}
                       className="h-[260px] w-full object-cover object-center md:h-[360px]"
+                      loading="lazy"
                     />
                   </div>
                 )}
@@ -447,27 +469,19 @@ export default function FounderResumePage() {
               </ul>
             </div>
 
-            {/* <div className="rounded-[28px] bg-[#f9e9eb] p-7 shadow-sm">
+            <div className="rounded-[28px] bg-[#f9e9eb] p-7 shadow-sm ring-1 ring-[#f0d3d8]">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c72537]">
                 Recommended Attachments
               </p>
               <ul className="mt-5 space-y-3 text-base leading-7 text-[#2d2d2d]">
-                <li>Producer&apos;s CV and selected filmography.</li>
-                <li>Individual film synopsis and technical specifications.</li>
-                <li>Official poster or key art and approved still images.</li>
-                <li>
-                  Trailer or screener link, with appropriate access permissions.
-                </li>
-                <li>Cast and crew list.</li>
-                <li>Production and copyright ownership information.</li>
-                <li>Rights and distribution availability statement.</li>
-                <li>Available technical delivery information.</li>
-                <li>
-                  Contact details for the authorised rights holder or sales
-                  representative.
-                </li>
+                {recommendedAttachments.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-2 h-2.5 w-2.5 rounded-full bg-[#c72537]" />
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
-            </div> */}
+            </div>
           </div>
         </section>
 

@@ -53,7 +53,7 @@ const Home = () => {
         <div className="flex flex-wrap gap-4">
           <div className="inline-block  text-white p-4">
             <h2 ref={glitch.ref}>
-              20k+ views on <a href="">Youtube</a> already
+             
             </h2>
           </div>
           <div className="inline-block text-white p-4">
