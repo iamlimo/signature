@@ -1,44 +1,67 @@
 "use client";
 import React from "react";
 import Navbar from "../components/Navbar";
-import "./Contact-us.css";
 import Footer from "../components/Footer";
+import "./Contact-us.css";
+
+const contactDetails = [
+  {
+    title: "Office Address",
+    value:
+      "Scandic Court 1, Our Daily Manner Rd, Ikate, Lekki, Lagos, Nigeria",
+    href: null,
+  },
+  {
+    title: "Phone",
+    value: "+234 902 630 8433",
+    href: "tel:+2349026308433",
+  },
+  {
+    title: "Email Address",
+    value: "info@signaturepicture.co",
+    href: "mailto:info@signaturepicture.co",
+  },
+];
+
 const Contact = () => {
   return (
     <>
       <Navbar />
-      <div className="hero contact bg-[#212121]">
-        <div className="gap-6 signature">
-          <h2>We’ve been waiting for you!</h2>
-          <p>
-            If you would like to work with us or just want to get in touch, we’d
-            love to hear from you!
-          </p>
-        </div>
-        <div className="container mx-auto px-4 py-8 info">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="rounded-2xl shadow p-6">
-              <h2 className="text-xl font-semibold mb-2">Office Address</h2>
-              <p>
-                Scandic Court 1, Our Daily Manner Rd, Ikate, Lekki, Lagos,
-                Nigeria
-              </p>
-            </div>
-            <div className=" rounded-2xl shadow p-6">
-              <h2 className="text-xl font-semibold mb-2">Phone</h2>
-              <p>+234 902 630 8433</p>
-            </div>
-            <div className="rounded-2xl shadow p-6">
-              <h2 className="text-xl font-semibold mb-2"> Email Address</h2>
-              <p>
-                <a href="mailto:info@signaturepicture.co">
-                  info@signaturepicture.co
-                </a>
-              </p>
+      <main className="contact-page">
+        <section className="contact-hero">
+          <div className="contact-hero__content">
+            <p className="contact-kicker">Let’s build your next story</p>
+            <h1>We’ve been waiting for you.</h1>
+            <p className="contact-intro">
+              If you want to work with us or simply connect, we’d love to hear
+              from you. Tell us what you’re creating, and we’ll help shape it.
+            </p>
+            <div className="contact-actions">
+              <a href="mailto:info@signaturepicture.co" className="primary-btn">
+                Email us
+              </a>
+              <a href="tel:+2349026308433" className="secondary-btn">
+                Call now
+              </a>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+
+        <section className="contact-info">
+          <div className="contact-grid">
+            {contactDetails.map((item) => (
+              <article key={item.title} className="contact-card">
+                <span className="contact-card__label">{item.title}</span>
+                {item.href ? (
+                  <a href={item.href}>{item.value}</a>
+                ) : (
+                  <p>{item.value}</p>
+                )}
+              </article>
+            ))}
+          </div>
+        </section>
+      </main>
       <Footer />
     </>
   );

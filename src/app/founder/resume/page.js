@@ -119,8 +119,8 @@ export default function FounderResumePage() {
     <>
       <Navbar />
 
-      <main className="bg-[#f6f3f1] text-[#121212]">
-        <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+      <main className="resume-page">
+        <section className="resume-shell resume-hero-wrap">
           <div className="overflow-hidden rounded-[30px] bg-[#111111] text-white shadow-[0_30px_80px_rgba(0,0,0,0.22)] ring-1 ring-white/10">
             <div className="grid gap-8 px-6 py-8 md:grid-cols-[1.45fr_0.55fr] md:px-10 lg:px-14 lg:py-12">
               <div className="relative">
@@ -196,7 +196,7 @@ export default function FounderResumePage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
+        <section className="resume-shell">
           <div className="grid gap-4 md:grid-cols-4">
             {profileStats.map((stat) => (
               <div
@@ -245,7 +245,7 @@ export default function FounderResumePage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
+        <section className="resume-shell resume-section">
           <div className="mb-8">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c72537]">
               2. Core Competencies
@@ -265,7 +265,7 @@ export default function FounderResumePage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+        <section className="resume-shell resume-section">
           <div className="mb-8">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c72537]">
               3. Filmography
@@ -383,7 +383,7 @@ export default function FounderResumePage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
+        <section className="resume-shell resume-section">
           <div className="mb-8">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c72537]">
               4. Professional Experience
@@ -415,7 +415,7 @@ export default function FounderResumePage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+        <section className="resume-shell resume-section">
           <div className="mb-8">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c72537]">
               5. Streaming Distribution and Content Delivery Experience
@@ -434,7 +434,7 @@ export default function FounderResumePage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
+        <section className="resume-shell resume-section">
           <div className="mb-8">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c72537]">
               6. Intellectual Property and Rights Documentation
@@ -453,7 +453,7 @@ export default function FounderResumePage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+        <section className="resume-shell resume-section">
           <div className="grid gap-8 md:grid-cols-2">
             <div className="rounded-[28px] bg-white p-7 shadow-sm ring-1 ring-[#efe4e0]">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c72537]">

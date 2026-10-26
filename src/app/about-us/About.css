@@ -1,27 +1,90 @@
-.about {
-  margin: 0 auto;
-  background-color: #212121;
-  color: #fff;
+.about-page {
+  background:
+    radial-gradient(circle at top, rgba(199, 37, 55, 0.18), transparent 26%),
+    linear-gradient(180deg, #111111 0%, #171717 100%);
+  color: #f5f5f5;
+}
+
+.about-hero,
+.about-services {
+  padding: 5rem 1.25rem;
 }
 
 .about-content {
-  padding: 2em 5em;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
 }
+
+.about-content h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 0.94;
+  letter-spacing: -0.06em;
+}
+
 .about-content h2 {
-  color: #c72537;
-  margin-top: 5px;
-  font-size: 18px;
-  font-weight: 500;
-}
-.about p {
-  font-size: 21px;
-  margin-top: 10px;
+  margin: 1rem 0 0;
+  color: #f9c4ca;
+  font-size: clamp(1.15rem, 2vw, 1.65rem);
+  font-weight: 600;
 }
 
-.about img {
-  margin-top: 20px;
+.about-content p {
+  max-width: 760px;
+  margin: 1.5rem auto 0;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.82);
 }
 
-.services {
-  margin-top: 20px;
+.about-image-block {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.25rem 1.75rem;
+}
+
+.about-image-block img {
+  display: block;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 55px rgba(0, 0, 0, 0.24);
+}
+
+.about-services {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.section-kicker {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #f9c4ca;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .about-hero,
+  .about-services {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .about-image-block {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

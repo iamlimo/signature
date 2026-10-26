@@ -2,30 +2,33 @@
 import Image from "next/image";
 import Services from "../components/Services";
 import Navbar from "../components/Navbar";
-import "./About.css";
 import Footer from "../components/Footer";
 import { useGlitch } from "react-powerglitch";
+import "./About.css";
+
 const About = () => {
   const glitch = useGlitch();
+
   return (
     <>
       <Navbar />
-      <div className="about">
-        <div className="about-content">
-          <h1 className="text-3xl font-bold text-center mt-10">About Us</h1>
-          <h2 ref={glitch.ref} className="text-center">
-            {" "}
-            Crafting Visual Stories That Leave a Signature Mark{" "}
-          </h2>
-          <p className="text-center">
-            At Signature Pictures Network, we’re more than just a video
-            production company — we’re visual storytellers, brand architects,
-            and creative collaborators. Our mission is simple: to help
-            individuals and brands turn their vision into compelling video
-            content that resonates, engages, and inspires.
-          </p>
-        </div>
-        <div className="img-full">
+      <main className="about-page">
+        <section className="about-hero">
+          <div className="about-content">
+            <span className="section-kicker">About us</span>
+            <h1>We turn ideas into stories people remember.</h1>
+            <h2 ref={glitch.ref}>Crafting visual stories that leave a signature mark.</h2>
+            <p>
+              At Signature Pictures Network, we’re more than just a video
+              production company — we’re visual storytellers, brand architects,
+              and creative collaborators. Our mission is simple: to help
+              individuals and brands turn their vision into compelling video
+              content that resonates, engages, and inspires.
+            </p>
+          </div>
+        </section>
+
+        <section className="about-image-block">
           <Image
             src="/about-spn.png"
             alt="Signature Pictures Network team and work"
@@ -34,12 +37,16 @@ const About = () => {
             priority
             style={{ width: "100%", height: "auto" }}
           />
-        </div>
-        <div className="services">
-          <h2 className="text-2xl font-bold text-center mb-4">Our Services</h2>
+        </section>
+
+        <section className="about-services">
+          <div className="section-heading">
+            <span className="section-kicker">What we do</span>
+            <h2>Our services</h2>
+          </div>
           <Services />
-        </div>
-      </div>
+        </section>
+      </main>
       <Footer />
     </>
   );

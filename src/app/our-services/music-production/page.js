@@ -43,75 +43,50 @@ const page = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto p-6 md:p-12">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-10">
-        🎧 Music & Sound Production
-      </h2>
-      <p className="text-center text-gray-600 text-lg mb-12 max-w-2xl mx-auto">
-        From idea to final master, we craft sound that speaks. Whether it's for
-        film, games, podcasts, ads, or music, our team delivers high-quality
-        audio that elevates your project.
-      </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {sections.map((section, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition-all"
-          >
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              {section.title}
-            </h3>
-            <p className="text-gray-600 mb-4">{section.description}</p>
-            <ul className="list-disc list-inside text-gray-600 space-y-1">
-              {section.items.map((item, idx) => (
-                <li key={idx}>{item}</li>
-              ))}
+    <div className="service-template">
+      <div className="service-shell">
+        <header className="service-header">
+          <span className="section-kicker">Music & sound</span>
+          <h1>Sound that shapes the emotion of every story.</h1>
+          <p>
+            From idea to final master, we craft sound that speaks. Whether it’s
+            for film, games, podcasts, ads, or music, our team delivers
+            high-quality audio that elevates your project.
+          </p>
+        </header>
+
+        <section className="service-section">
+          <h2>What we offer</h2>
+          <div className="service-grid">
+            {sections.map((section, index) => (
+              <article key={index} className="service-card">
+                <h3>{section.title}</h3>
+                <p>{section.description}</p>
+                <ul>
+                  {section.items.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="service-section service-section--compact">
+          <div className="service-highlight">
+            <h3>Why choose us?</h3>
+            <ul>
+              <li>Tailored approach for every project</li>
+              <li>Expert team with multi-industry experience</li>
+              <li>Industry-standard gear for premium output</li>
+              <li>On-time delivery without compromising quality</li>
             </ul>
           </div>
-        ))}
-      </div>
-      <div className="mt-16 text-center">
-        <h4 className="text-2xl font-semibold text-gray-800 mb-4">
-          Why Choose Us?
-        </h4>
-        <ul className="space-y-2 text-gray-600">
-          <li>
-            🎯 <strong>Tailored Approach</strong> – Every project gets a unique
-            sound treatment.
-          </li>
-          <li>
-            🎧 <strong>Expert Team</strong> – Trusted pros with multi-industry
-            experience.
-          </li>
-          <li>
-            🔧 <strong>Pro Gear</strong> – Industry-standard tech for premium
-            results.
-          </li>
-          <li>
-            ⏱ <strong>On-Time Delivery</strong> – Fast turnaround without
-            compromising quality.
-          </li>
-        </ul>
-      </div>
-      <div className="mt-16 text-center">
-        <h4 className="text-2xl font-semibold text-gray-800 mb-4">
-          Who We Work With
-        </h4>
-        <p className="text-gray-600">
-          🎬 Film & TV 🎮 Games 📢 Brands & Ads 🎙 Podcasts 🎶 Artists 🏢
-          Corporates
-        </p>
-      </div>
-      <div className="mt-16 text-center">
-        <h4 className="text-2xl font-semibold text-gray-800 mb-4">
-          Let’s Make Sound Matter
-        </h4>
-        <p className="text-gray-600 mb-6">
-          Get in touch for a custom quote and let’s build your sound identity.
-        </p>
-        <button className="bg-black text-white px-6 py-3 rounded-xl shadow hover:bg-gray-800 transition-all">
-          Contact Us
-        </button>
+          <div className="service-highlight">
+            <h3>Who we work with</h3>
+            <p>Film & TV · Games · Brands & Ads · Podcasts · Artists · Corporates</p>
+          </div>
+        </section>
       </div>
     </div>
   );

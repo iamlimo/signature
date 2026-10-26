@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,52 +28,38 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-black text-white px-4 py-3 w-full z-50">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <div className="flex items-center space-x-2">
+    <nav className="site-navbar">
+      <div className="site-navbar__inner">
+        <div className="site-navbar__brand">
           <Image
             src="/spn-logo.png"
-            alt="Logo"
+            alt="Signature Pictures Network logo"
             width={120}
             height={56}
-            className="h-14 w-auto"
+            className="site-navbar__logo"
           />
         </div>
 
-        {/* Desktop Nav Links */}
-        <div className="hidden md:flex items-center space-x-6">
-          {/* {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.path}
-              className="hover:text-red-500 transition"
-            >
-              {link.name}
-            </a>
-          ))} */}
-          <a href="/" className="hover:text-red-500 transition">
-            Home
-          </a>
-          <a href="/about-us" className="hover:text-red-500 transition">
-            About
-          </a>
-          {/* Dropdown */}
-          <div className="relative group">
+        <div className="site-navbar__desktop">
+          <a href="/">Home</a>
+          <a href="/about-us">About</a>
+          <div className="site-navbar__dropdown">
             <button
               onClick={() => setServicesOpen(!servicesOpen)}
-              className="flex items-center space-x-1 hover:text-red-500 transition"
+              className="site-navbar__toggle"
+              type="button"
             >
               <span>Services</span>
               <ChevronDown size={16} />
             </button>
             {servicesOpen && (
-              <div className="absolute mt-2 bg-white text-black rounded-md shadow-md py-2 w-56 z-50">
+              <div className="site-navbar__menu">
                 {serviceLinks.map((item) => (
                   <Link
                     key={item.name}
                     href={item.path}
-                    className="block px-4 py-2 hover:bg-red-100"
+                    className="site-navbar__menu-item"
+                    onClick={() => setServicesOpen(false)}
                   >
                     {item.name}
                   </Link>
@@ -80,56 +67,46 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <a href="/contact-us" className="hover:text-red-500 transition">
-            {" "}
-            Contact
-          </a>
-          <Link
-            href="/contact-us"
-            className="bg-red-600 hover:bg-red-700 transition text-white px-5 py-2 rounded-md"
-          >
+          <a href="/contact-us">Contact</a>
+          <Link href="/contact-us" className="site-navbar__cta">
             Let’s Talk
           </Link>
         </div>
 
-        {/* Mobile Menu Icon */}
-        <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)}>
+        <div className="site-navbar__mobile-toggle">
+          <button onClick={() => setIsOpen(!isOpen)} type="button" aria-label="Toggle menu">
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden mt-4 space-y-4">
+        <div className="site-navbar__mobile">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.path}
               onClick={() => setIsOpen(false)}
-              className="block text-center py-2"
             >
               {link.name}
             </a>
           ))}
 
-          {/* Services Dropdown */}
-          <div className="text-center">
+          <div className="site-navbar__mobile-group">
             <button
               onClick={() => setServicesOpen(!servicesOpen)}
-              className="text-white py-2"
+              className="site-navbar__mobile-services"
+              type="button"
             >
               Services <ChevronDown size={16} className="inline ml-1" />
             </button>
             {servicesOpen && (
-              <div className="mt-2 bg-white text-black rounded-md shadow-md py-2 mx-8">
+              <div className="site-navbar__mobile-menu">
                 {serviceLinks.map((item) => (
                   <a
                     key={item.name}
                     href={item.path}
                     onClick={() => setIsOpen(false)}
-                    className="block px-4 py-2 hover:bg-red-100"
                   >
                     {item.name}
                   </a>
@@ -138,14 +115,9 @@ const Navbar = () => {
             )}
           </div>
 
-          <div className="flex justify-center">
-            <Link
-              href="/contact-us"
-              className="bg-red-600 hover:bg-red-700 transition text-white px-5 py-2 rounded-md"
-            >
-              Let’s Talk
-            </Link>
-          </div>
+          <Link href="/contact-us" className="site-navbar__cta site-navbar__cta--mobile" onClick={() => setIsOpen(false)}>
+            Let’s Talk
+          </Link>
         </div>
       )}
     </nav>

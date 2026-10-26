@@ -3,40 +3,46 @@ import Navbar from "../components/Navbar";
 import "./Work.css";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
+
 const Work = () => {
   return (
     <>
       <Navbar />
-      <div className="work bg-[#222222] text-white">
-        <div className="work-content justify-center text-center">
-          <h1>Signature Pictures Network</h1>
-          <p>
-            We are a video production company that specializes in creating
-            high-quality videos for businesses and organizations. Our team of
-            experienced professionals is dedicated to helping you tell your
-            story through the power of video. We offer a wide range of services,
-            including corporate videos, promotional videos, event coverage, and
-            more. Whether you need a simple video for your website or a complex
-            production for a major event, we have the skills and expertise to
-            deliver exceptional results.
-          </p>
-          <div className="flex justify-center video-full">
+      <main className="work-page">
+        <section className="work-hero">
+          <div className="work-hero__content">
+            <span className="section-kicker">Our work</span>
+            <h1>Stories with impact, crafted for screens that matter.</h1>
+            <p>
+              We create cinematic, culture-driven visual experiences for brands,
+              artists, institutions, and businesses that want to stand out.
+              From branded storytelling to motion-led campaigns and event
+              coverage, every frame is designed to connect and convert.
+            </p>
+          </div>
+        </section>
+
+        <section className="work-showcase">
+          <div className="video-frame">
             <iframe
-              width="853"
-              height="480"
               src="https://www.youtube.com/embed/4mFxqJAqX9k"
-              title="ÌLẸ̀KẸ̀ (The Heir of Oyinde) EP1 - Nollywood - Raph Niyi, Fuad Ferdinand, Fatai Osin - #nollywood"
-              frameborder="0"
+              title="Signature Pictures Network showcase"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           </div>
-        </div>
-        <div className="services">
+        </section>
+
+        <section className="work-services">
+          <div className="section-heading">
+            <span className="section-kicker">Our capabilities</span>
+            <h2>What we do</h2>
+          </div>
           <Services />
-        </div>
-      </div>
+        </section>
+      </main>
       <Footer />
     </>
   );
