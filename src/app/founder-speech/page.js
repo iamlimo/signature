@@ -7,12 +7,12 @@ const page = () => {
     {
       title: "Introduction",
       text:
-        "My name is Sanni Dhikrulah Olaniyi, a film producer and storyteller, and the founder of Signature Pictures Network. Inspired by classic soap operas like Super Story and productions by Wale Adenuga (WAP), I’ve been driven to create compelling African stories—like the masterpiece ÌLẸ̀KẸ̀ - The Hidden Heir.",
+        "My name is Sanni Dhikrulah Olaniyi, a film producer and storyteller, and the founder of Signature Pictures Network. Inspired by classic soap operas like Super Story and productions by Wale Adenuga (WAP), I’ve been driven to create compelling African stories like the masterpiece ÌLẸ̀KẸ̀ - The Hidden Heir.",
     },
     {
       title: "About Ileke",
       text:
-        "ÌLẸ̀KẸ̀ - The Hidden Heir is my open letter to Nollywood and the global film industry—a powerful, original story deeply rooted in Yoruba spirituality, fashion, and culture.",
+        "ÌLẸ̀KẸ̀ - The Hidden Heir is my open letter to Nollywood and the global film industry a powerful, original story deeply rooted in Yoruba spirituality, fashion, and culture.",
     },
     {
       title: "Working With the Director",
@@ -22,7 +22,7 @@ const page = () => {
     {
       title: "Cast & Crew Experience",
       text:
-        "Working with veterans brought wisdom and elite talent to the set. The young actors also exceeded expectations with passionate performances—an experience I look forward to repeating.",
+        "Working with veterans brought wisdom and elite talent to the set. The young actors also exceeded expectations with passionate performances an experience I look forward to repeating.",
     },
     {
       title: "Sound & Music",
