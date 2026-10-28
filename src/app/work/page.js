@@ -24,14 +24,7 @@ const Work = () => {
 
         <section className="work-showcase">
           <div className="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/4mFxqJAqX9k"
-              title="Signature Pictures Network showcase"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+          <iframe width="1337" height="752" src="https://www.youtube.com/embed/ykubqpR95Xs" title="ÌLẸ̀KẸ̀ (The Hidden Heir) - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </section>
 

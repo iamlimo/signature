@@ -469,19 +469,7 @@ export default function FounderResumePage() {
               </ul>
             </div>
 
-            <div className="rounded-[28px] bg-[#f9e9eb] p-7 shadow-sm ring-1 ring-[#f0d3d8]">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c72537]">
-                Recommended Attachments
-              </p>
-              <ul className="mt-5 space-y-3 text-base leading-7 text-[#2d2d2d]">
-                {recommendedAttachments.map((item) => (
-                  <li key={item} className="flex gap-3">
-                    <span className="mt-2 h-2.5 w-2.5 rounded-full bg-[#c72537]" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+           
           </div>
         </section>
 
