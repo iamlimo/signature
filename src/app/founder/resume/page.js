@@ -3,8 +3,8 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 const profileStats = [
-  { label: "Years in production", value: "5+" },
-  { label: "Feature / series projects", value: "12+" },
+  { label: "Years in Production & Technology", value: "5+" },
+  { label: "Feature / series projects", value: "2+" },
   { label: "Streaming distribution", value: "Worldwide" },
   { label: "Languages", value: "Yoruba + English" },
 ];
@@ -24,6 +24,7 @@ const competencies = [
   "Film marketing and festival submissions",
   "Production risk management",
   "Contract and stakeholder coordination",
+  "Technology Strategic & Managing Direction",
 ];
 
 const filmography = [
@@ -73,14 +74,14 @@ const experience = [
     company: "Signature Pictures Network",
     period: "June 2021 – Present",
     description:
-      "Oversaw the development and production of film and television projects from concept through completion. Managed production budgets, schedules, resources, and operational requirements. Coordinated directors, writers, cast, crew, suppliers, and post-production teams. Supervised production milestones to maintain creative objectives, timelines, and quality standards. Collaborated with distributors, broadcasters, and streaming platforms.",
+      "Oversaw the technology development and production of film and television projects from concept through completion. Managed production budgets, schedules, resources, and operational requirements. Coordinated directors, writers, cast, crew, suppliers, and post-production teams. Supervised production milestones to maintain creative objectives, timelines, and quality standards. Collaborated with distributors, broadcasters, and streaming platforms.",
   },
 ];
 
 const rightsAndDistribution = [
   "Streaming Platform Experience: Signature TV",
-  "Distribution and Licensing: 12 Months License",
-  "Territorial Rights Management: Worldwide",
+  "Distribution and Licensing: Including negotiating licensing agreements, managing content acquisition, coordinating multi-platform distribution, and securing rights for digital streaming across various territories.",
+  "Territorial Rights Management:Content licensing, distribution rights, territory-specific agreements, rights acquisition, and ensuring compliance with regional broadcasting and streaming regulations.",
   "Content Delivery: Delivered master export deliverables across multiple releases, ensuring full compliance with SVOD, TVOD, VOD, and linear delivery specifications.",
   "Technical Quality Control: Technical masters, localized timed text assets, layered promotional artwork, and structured metadata.",
   "Content Protection: Managed chain-of-title clearances, copyright registrations, and anti-piracy efforts.",
@@ -141,10 +142,24 @@ export default function FounderResumePage() {
                   <p>Phone: +2348162059633</p>
                   <p>Email: ceo@signaturetv.co</p>
                   <p>
-                    Website: <a href="https://signaturepicture.co/" className="text-[#f9c4ca] underline-offset-4 hover:underline">https://signaturepicture.co</a>
+                    Website:{" "}
+                    <a
+                      href="https://signaturepicture.co/"
+                      className="text-[#f9c4ca] underline-offset-4 hover:underline"
+                    >
+                      https://signaturepicture.co
+                    </a>
                   </p>
                   <p className="sm:col-span-2">
-                    LinkedIn: <a href="https://www.linkedin.com/in/sanni-dhikrulah-olaniyi-0a1b3b1b6/" target="_blank" rel="noopener noreferrer" className="text-[#f9c4ca] underline-offset-4 hover:underline">https://www.linkedin.com/in/sanni-dhikrulah-olaniyi-0a1b3b1b6/</a>
+                    LinkedIn:{" "}
+                    <a
+                      href="https://www.linkedin.com/in/sanni-dhikrulah-olaniyi-0a1b3b1b6/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#f9c4ca] underline-offset-4 hover:underline"
+                    >
+                      https://www.linkedin.com/in/sanni-dhikrulah-olaniyi-0a1b3b1b6/
+                    </a>
                   </p>
                 </div>
 
@@ -168,7 +183,7 @@ export default function FounderResumePage() {
                 <div className="w-full max-w-sm overflow-hidden rounded-[24px] border border-white/10 bg-gradient-to-br from-[#c72537] via-[#9d162b] to-[#2a0a12] shadow-2xl">
                   <div className="relative">
                     <Image
-                      src="/sanni.png"
+                      src="/new-image.jpeg"
                       alt="Sanni Dhikrulah Olaniyi"
                       width={800}
                       height={1100}
@@ -185,9 +200,9 @@ export default function FounderResumePage() {
                       Film Producer
                     </h2>
                     <p className="mt-3 text-sm leading-6 text-[#f3dfe2]">
-                      Developing, producing, managing and delivering film projects
-                      with a focus on authentic African storytelling and
-                      commercially viable content.
+                      Developing, producing, managing and delivering film
+                      projects with a focus on authentic African storytelling
+                      and commercially viable content.
                     </p>
                   </div>
                 </div>
@@ -225,8 +240,8 @@ export default function FounderResumePage() {
               developing, producing, managing, and delivering film projects.
               Specialises in feature films, short films, television series,
               documentaries and music, with expertise in production management,
-              budgeting, creative development, cast and crew coordination, and
-              post-production supervision.
+              budgeting, creative and technology development, cast and crew
+              coordination, and post-production supervision.
             </p>
             <p className="mt-5 text-lg leading-8 text-[#2d2d2d]">
               Demonstrates a strong commitment to authentic African
@@ -237,10 +252,10 @@ export default function FounderResumePage() {
               projects from concept to completion.
             </p>
             <p className="mt-5 text-lg leading-8 text-[#2d2d2d]">
-              Seeking to build strategic relationships with streaming platforms,
-              broadcasters, distributors, and content acquisition partners to
-              expand the reach and commercial potential of quality film and
-              television productions.
+              Built Signature TV a streaming platform and creating a strategic
+              relationships with, broadcasters, distributors, and content
+              acquisition partners to expand the reach and commercial potential
+              of quality film and television productions.
             </p>
           </div>
         </section>
@@ -468,8 +483,6 @@ export default function FounderResumePage() {
                 ))}
               </ul>
             </div>
-
-           
           </div>
         </section>
 

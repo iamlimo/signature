@@ -14,6 +14,7 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about-us" },
     { name: "Work", path: "/work" },
+    { name: "Signature TV", path: "https://signaturetv.co/", external: true },
     { name: "Contact", path: "/contact-us" },
   ];
 
@@ -24,6 +25,11 @@ const Navbar = () => {
     {
       name: "Music & Sound Production",
       path: "/our-services/music-production",
+    },
+    {
+      name: "Signature TV",
+      path: "https://signaturetv.co/",
+      external: true,
     },
   ];
 
@@ -43,6 +49,13 @@ const Navbar = () => {
         <div className="site-navbar__desktop">
           <a href="/">Home</a>
           <a href="/about-us">About</a>
+          <a
+            href="https://signaturetv.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Signature TV
+          </a>
           <div className="site-navbar__dropdown">
             <button
               onClick={() => setServicesOpen(!servicesOpen)}
@@ -60,6 +73,9 @@ const Navbar = () => {
                     href={item.path}
                     className="site-navbar__menu-item"
                     onClick={() => setServicesOpen(false)}
+                    {...(item.external
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
                   >
                     {item.name}
                   </Link>
@@ -74,7 +90,11 @@ const Navbar = () => {
         </div>
 
         <div className="site-navbar__mobile-toggle">
-          <button onClick={() => setIsOpen(!isOpen)} type="button" aria-label="Toggle menu">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            type="button"
+            aria-label="Toggle menu"
+          >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -87,6 +107,9 @@ const Navbar = () => {
               key={link.name}
               href={link.path}
               onClick={() => setIsOpen(false)}
+              {...(link.external
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : {})}
             >
               {link.name}
             </a>
@@ -107,6 +130,9 @@ const Navbar = () => {
                     key={item.name}
                     href={item.path}
                     onClick={() => setIsOpen(false)}
+                    {...(item.external
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
                   >
                     {item.name}
                   </a>
@@ -115,7 +141,11 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link href="/contact-us" className="site-navbar__cta site-navbar__cta--mobile" onClick={() => setIsOpen(false)}>
+          <Link
+            href="/contact-us"
+            className="site-navbar__cta site-navbar__cta--mobile"
+            onClick={() => setIsOpen(false)}
+          >
             Let’s Talk
           </Link>
         </div>
